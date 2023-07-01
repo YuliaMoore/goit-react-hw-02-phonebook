@@ -1,17 +1,24 @@
 import React from 'react';
 
-// function ContactList({ contacts, onDelete }) {
-//   return (
-//     // <List>
-//     //   {contacts.map(({ id, name, number }, idx) => (
-//     //     <ListItem key={id}>
-//     //       <div>{idx + 1}</div>
-//     //       {name}: {number}
-//     //       <Button onClick={() => onDelete(id)}>delete</Button>
-//     //     </ListItem>
-//     //   ))}
-//     // </List>
-//   );
-// }
+// Компонент списка контактов
+const ContactList = ({ contacts, onRemoveContact }) => (
+  <List>
+    {contacts.map(contact => (
+      <Item key={contact.id}>
+        {contact.name + ' : ' + contact.number}
+        {
+          // Кнопка удаления контакта
+          <Button
+            type="button"
+            name="delete"
+            onClick={() => onRemoveContact(contact.id)}
+          >
+            delete
+          </Button>
+        }
+      </Item>
+    ))}
+  </List>
+);
 
-// export default ContactList;
+export default ContactList;
