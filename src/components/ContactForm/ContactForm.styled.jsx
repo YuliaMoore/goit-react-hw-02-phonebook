@@ -5,16 +5,15 @@ export const Form = styled.form`
   flex-direction: column;
   width: 400px;
   padding: 12px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border: 3px solid #f08080;
-  border-radius: 4px;
+  background-color: rgb(253, 253, 253);
+  border: 3px solid #1f1b1b;
 `;
 
 export const Label = styled.label`
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
-  color: #f08080;
+  color: #1f1b1b;
   font-size: 20px;
 `;
 
@@ -29,7 +28,7 @@ export const Button = styled.button`
   font: inherit;
   cursor: pointer;
   border-radius: 4px;
-  border: 3px solid #f08080;
-  color: #f08080;
+  border: 3px solid #1f1b1b;
+  color: #1f1b1b;
   font-size: 20px;
 `;
